@@ -1,0 +1,19 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+build/*
+!build/index.js
+
+views/**
+public/**
+dist/**
+test/**
+**/*.map
+**/*.css
+**/*.html
+**/*.md
+**/*.svg
+**/*.png
+**/*.iml
+**/*.ejs
+**/*.txt
+**/*.json

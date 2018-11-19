@@ -1,0 +1,32 @@
+{
+  "name": "allkingj",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon bin/www"
+  },
+  "dependencies": {
+    "async-validator": "^1.10.0",
+    "connect-redis": "^3.4.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-cluster": "0.0.5",
+    "express-session": "^1.15.6",
+    "helmet": "^3.14.0",
+    "http-errors": "~1.6.2",
+    "lodash": "^4.17.11",
+    "log4js": "^3.0.6",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "redis": "^2.8.0",
+    "serve-favicon": "^2.5.0",
+    "utility": "^1.15.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "nodemon": "^1.18.4"
+  }
+}

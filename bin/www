@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+//第三方依赖
+const cluster = require('express-cluster');
+
+// 本地依赖
+const config = require('../config/env/base.config');
+
+/**
+ * make a log directory, just in case it isn't there.
+ */
+try {
+  require('fs').mkdirSync('./log');
+} catch (err) {
+  if (err.code !== 'EEXIST') {
+    console.error('Could not set up log directory, error was: ', err);
+    process.exit(1);
+  }
+}
+
+/**
+ * Initialise log4js first, so we don't miss any log messages
+ */
+const log4js = require('log4js');
+log4js.configure('./config/log4js/logConf.json');
+
+const log = log4js.getLogger('startup');
+
+//let's start up a cluster
+cluster(function() {
+  const app = require('../app');
+
+  app.set('port', process.env.PORT || config.baseConfig.port);
+
+  const server = app.listen(app.get('port'), function() {
+    log.info('Express server listening on port ', server.address().port, ' with pid ', process.pid );
+  });
+});
