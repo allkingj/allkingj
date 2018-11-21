@@ -10,7 +10,7 @@ const UserModel = require('../models/UserModel');
 class UserService extends BaseService {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(){
     super();
@@ -23,9 +23,9 @@ class UserService extends BaseService {
     const self = this;
     const {access_token, res} = params;
 
-    //校验用户数据
+    //查询用户数据
     (async()=>{
-      let _data = {};
+
       //捕捉异常
       try{
 

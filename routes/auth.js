@@ -1,6 +1,11 @@
+/**
+ * auth 路由
+ * Created by wangjian on 2018/11/14
+ */
+
 //第三方依赖
 const router = require('express').Router();
-const logger = require('log4js').getLogger('index');
+const logger = require('log4js').getLogger('auth');
 
 /*
 * auth 接口
@@ -8,6 +13,7 @@ const logger = require('log4js').getLogger('index');
 * @
 * */
 router.use('/', function(req, res, next) {
+
 });
 
 module.exports = router;

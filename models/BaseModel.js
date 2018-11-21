@@ -1,5 +1,5 @@
 /**
- * 数据层基
+ * 数据层基类
  * Created by wangjian on 2018/10/29
  */
 

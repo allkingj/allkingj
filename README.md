@@ -5,7 +5,8 @@
 ---
 + 使用express+vue 构建B端项目
 + 官网：https://allkingj.github.io/
-+ 源码地址：https://github.com/allkingj/allkingj（欢迎star）
++ 源码地址-服务端：https://github.com/allkingj/allkingj（欢迎star）
++ 源码地址-客户端：https://github.com/allkingj/allkingj-client（欢迎star）
 
 ### 版本介绍
 
@@ -18,13 +19,25 @@
 ### 下载项目
 
 ---
-+ https下载链接:https://github.com/allkingj/allkingj.git
++ https下载链接-服务端:https://github.com/allkingj/allkingj.git
 + ```git clone https://github.com/allkingj/allkingj.git```
++ https下载链接-服务端:https://github.com/allkingj/allkingj-client.git
++ ```https://github.com/allkingj/allkingj-client.git```
 
 ### 项目使用
 
 ---
-+ node版本 6.x+
++ 服务端
+    - node版本 6.x+
+    - npm 3.x+
+```
+    安装 npm i 
+    运行 npm run dev
+```
+
++ 客户端
+    - vue版本 2.x+
+    - npm 3.x+
 ```
     安装 npm i 
     运行 npm run dev

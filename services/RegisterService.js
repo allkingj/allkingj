@@ -10,7 +10,7 @@ const RegisterModel = require('../models/RegisterModel');
 class RegisterService extends BaseService {
 
   /*
- 	* 构造
+ 	* 构造函数
  	* */
   constructor(){
     super();
@@ -42,10 +42,6 @@ class RegisterService extends BaseService {
     };
 
     // 设置mysql参数(要按照顺序放值)
-    // `userid` char(100) NOT NULL COMMENT '用户ID',
-    // `mobile` char(100) NOT NULL COMMENT '手机号码',
-    // `password` char(100) NOT NULL COMMENT '密码',
-    // `create_time` datetime NOT NULL COMMENT '创建时间',
     const mysqlParams = [
       userid,
       username,

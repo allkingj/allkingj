@@ -13,7 +13,7 @@ class LogoutModel extends BaseModel {
   }
 
   /*
-	* 将数据保存到redis
+	* 删除redis数据
 	* @params
 	* */
   delRedis(params){

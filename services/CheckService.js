@@ -1,5 +1,5 @@
 /**
- * 首页接口 服务层
+ * web服务入口 服务层
  * Created by wangjian on 2018/11/13
  */
 
@@ -10,7 +10,7 @@ const CheckModel = require('../models/CheckModel');
 class CheckService extends BaseService {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(){
     super();
@@ -25,7 +25,7 @@ class CheckService extends BaseService {
 
     //校验用户数据
     (async()=>{
-      let _data = {};
+      
       //捕捉异常
       try{
 

@@ -10,7 +10,7 @@ const LoginService = require('../services/LoginService');
 class LoginController extends BaseController {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(req) {
 

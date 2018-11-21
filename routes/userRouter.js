@@ -15,7 +15,7 @@ const UserController = require('../controllers/UserController');
 * */
 router.get('/', function(req, res, next) {
   try{
-    //调用 login控制器
+    //调用 user控制器
     new UserController(req).checkLogin(req, res, next);
   }catch(err){
     logger.error(err);

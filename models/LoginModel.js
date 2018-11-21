@@ -48,24 +48,6 @@ class LoginModel extends BaseModel {
     });
   }
 
-  /*
-	* 将数据保存到mysql
-	* @params
-	* */
-  saveMysql(params){
-    const self = this;
-    return new Promise((resolve, reject)=>{
-      (async()=> {
-        try{
-          let sql = 'insert into test.user_register(userid,mobile,password,create_time)values(?,?,?,?)';
-          const Row = await self.dealMysql.execute(sql, params);
-          resolve(Row);
-        }catch(e){
-          reject(e);
-        }
-      })();
-    });
-  }
 }
 
 module.exports = LoginModel;

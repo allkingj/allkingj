@@ -10,7 +10,7 @@ const LoginModel = require('../models/LoginModel');
 class LoginService extends BaseService {
 
   /*
- 	* 构造
+ 	* 构造函数
  	* */
   constructor(){
     super();

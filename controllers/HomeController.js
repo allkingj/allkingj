@@ -10,7 +10,7 @@ const HomeService = require('../services/HomeService');
 class HomeController extends BaseController{
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(req) {
 

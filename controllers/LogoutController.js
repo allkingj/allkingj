@@ -10,7 +10,7 @@ const LogoutService = require('../services/LogoutService');
 class LogoutController extends BaseController {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(req) {
 

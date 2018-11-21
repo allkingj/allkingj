@@ -10,7 +10,7 @@ const LogoutModel = require('../models/LogoutModel');
 class LogoutService extends BaseService {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(){
     super();
@@ -25,13 +25,13 @@ class LogoutService extends BaseService {
     const { res } = params;
     // 设置删除参数
 
-    //校验用户数据
+    //清除用户数据
     (async()=>{
 
       //捕捉异常
       try{
         /*
-				* 根据用户手机号码查询用户数据
+				* 伤处redis数据
 				* @params
 				* */
         await self.logoutModel.delRedis(params);

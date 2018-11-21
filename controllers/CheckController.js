@@ -1,9 +1,5 @@
 /**
- * Created by cygr-0101-01-0110 on 2018/11/14
- */
-
-/**
- * 首页接口 控制器
+ * web服务入口 控制器
  * Created by wangjian on 2018/11/13
  */
 
@@ -14,7 +10,7 @@ const CheckService = require('../services/CheckService');
 class CheckController extends BaseController{
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(req) {
 

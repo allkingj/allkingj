@@ -16,7 +16,7 @@ const LogoutController = require('../controllers/LogoutController');
 router.get('/', function(req, res, next) {
 
   try{
-    console.log(123)//调用 login控制器
+    //调用 logout控制器
     new LogoutController(req).logout(req, res, next);
   }catch(err){
     logger.error(err);

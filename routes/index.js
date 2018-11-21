@@ -3,9 +3,6 @@
  * Created by wangjian on 2018/10/15
  */
 
-//第三方依赖
-const express = require('express');
-
 //本地依赖
 const checkRouter = require('./checkRouter');
 const loginRouter = require('./loginRouter');
@@ -13,7 +10,6 @@ const logoutRouter = require('./logoutRouter');
 const registerRouter = require('./registerRouter');
 const homeRouter = require('./homeRouter');
 const userRouter = require('./userRouter');
-
 
 const routerEntry = app => {
 

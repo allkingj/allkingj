@@ -10,7 +10,7 @@ const RegisterService = require('../services/RegisterService');
 class RegisterController extends BaseController {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor(req) {
 

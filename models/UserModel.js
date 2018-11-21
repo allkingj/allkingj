@@ -13,7 +13,7 @@ class UserModel extends BaseModel {
   }
 
   /*
- * 根据用户手机号码查询用户密码
+ * 根据用户手机号码查询用户信息
  * @params
  * */
   getUserInfo(params){

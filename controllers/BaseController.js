@@ -13,7 +13,7 @@ const FieldSchema = require('../middlewares/FieldSchema');
 class BaseController {
 
   /*
-	 * 构造
+	 * 构造函数
 	 * */
   constructor() {
     this.schema = Schema;

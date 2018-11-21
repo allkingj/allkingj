@@ -11,14 +11,14 @@ const logger = require('log4js').getLogger('checkRouter');
 const CheckController = require('../controllers/CheckController');
 
 /*
-* auth 接口
-* @
-* @
+* 用户信息校验 接口
+* @cookie
 * */
+
 router.use('/', function(req, res, next) {
 
   try{
-    //调用 login控制器
+    //调用 check控制器
     new CheckController(req).checkLogin(req, res, next);
   }catch(err){
     logger.error(err);

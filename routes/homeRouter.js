@@ -14,15 +14,6 @@ const HomeController = require('../controllers/HomeController');
 * 首页接口
 * */
 router.get('/', function(req, res, next) {
-  res.json({data: 'home'});
-  // try{
-  //   //调用 home控制器
-  //   new HomeController(req).checkUser(req, res, next);
-  // }catch(err){
-  //   logger.error(err);
-  //   next(err);
-  // }
-
 });
 
 module.exports = router;

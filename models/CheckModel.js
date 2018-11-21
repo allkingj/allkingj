@@ -1,5 +1,5 @@
 /**
- *
+ * web服务入口 数据层
  * Created by wangjian on 2018/11/14
  */
 
@@ -13,7 +13,7 @@ class CheckModel extends BaseModel {
   }
 
   /*
- * 根据用户手机号码查询用户密码
+ * 根据用户手机号码查询用户信息
  * @params
  * */
   getUserInfo(params){
