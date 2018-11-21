@@ -63,7 +63,7 @@ typings/
 
 # Optional editor cache directory
 .idea
-.idea/codeStyles
+.idea/*
 .vscode
 .vs
 .DS_Store
