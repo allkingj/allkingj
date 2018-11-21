@@ -30,7 +30,7 @@ class LogoutController extends BaseController {
       res,
       access_token
     };
-    console.log('logoutService');
+
     /*
 			* 调用loginService 处理服务层数据
 			* @param
