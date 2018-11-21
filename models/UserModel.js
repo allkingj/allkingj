@@ -38,7 +38,6 @@ class UserModel extends BaseModel {
   getRedis(params){
     const self = this;
     const { access_token } = params;
-    console.log(params);
     return new Promise((resolve, reject)=>{
       self.redis.get( access_token, async (err, result)=>{
         if(err){
